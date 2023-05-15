@@ -40,4 +40,16 @@ public class CalculatorTest {
 
         assertEquals(expectedProduct, actualProduct);
     }
+
+    @Test
+    public void TestDivision(){
+        Calculator calculator = new Calculator();
+        int num1 = 4;
+        int num2 = 2;
+        int expectedQuotient = 2;
+
+        int actualQuotient = calculator.multiply(num1, num2);
+
+        assertEquals(expectedQuotient, actualQuotient);
+    }
 }

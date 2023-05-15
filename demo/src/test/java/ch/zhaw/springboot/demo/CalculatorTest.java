@@ -1,6 +1,6 @@
 
 import org.junit.Test;
-import static org.junit.Assert;
+import org.junit.Assert;
 
 public class CalculatorTest {
 
@@ -12,7 +12,7 @@ public class CalculatorTest {
         int expectedSum = 11;
 
         int actualSum = calculator.add(num1, num2);
-
+  
         Assert.assertEquals(expectedSum, actualSum);
     } 
 }

@@ -28,4 +28,16 @@ public class CalculatorTest {
         
         assertEquals(expectedDifference, actualDifference);
     }
+
+    @Test
+    public void TestMultiplikation(){
+        Calculator calculator = new Calculator();
+        int num1 = 6;
+        int num2 = 5;
+        int expectedProduct = 30;
+
+        int actualProduct = calculator.subtract(num1, num2);
+
+        assertEquals(expectedProduct, actualProduct);
+    }
 }

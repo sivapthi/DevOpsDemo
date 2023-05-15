@@ -36,7 +36,7 @@ public class CalculatorTest {
         int num2 = 5;
         int expectedProduct = 30;
 
-        int actualProduct = calculator.subtract(num1, num2);
+        int actualProduct = calculator.multiply(num1, num2);
 
         assertEquals(expectedProduct, actualProduct);
     }

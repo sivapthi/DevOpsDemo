@@ -48,7 +48,7 @@ public class CalculatorTest {
         int num2 = 2;
         int expectedQuotient = 2;
 
-        int actualQuotient = calculator.multiply(num1, num2);
+        int actualQuotient = calculator.divide(num1, num2);
 
         assertEquals(expectedQuotient, actualQuotient);
     }

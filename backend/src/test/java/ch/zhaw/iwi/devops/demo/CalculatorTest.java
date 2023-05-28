@@ -1,6 +1,8 @@
 package ch.zhaw.iwi.devops.demo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
@@ -124,4 +126,12 @@ public class CalculatorTest {
 
         assertEquals(expectedQuotient, actualQuotient);
     }
+
+    @Test
+    public void TestUnterNullResultat() {
+        Calculator calculator = new Calculator();
+        int result = calculator.modulo(10, 3);
+        assertTrue(result >= 0);
+    }
+
 }

@@ -6,12 +6,19 @@ public class Calculator {
         return num1 + num2;
     }
 
+    public float addfloat(float num1, float num2) {
+        return num1 + num2;
+    }
+
     public int subtract(int num1, int num2) {
         return num1 - num2;
     }
 
     public int multiply(int num1, int num2) {
-        return num1 * num2;
+        if (num1 == 0 || num2 ==0) {
+            throw new IllegalArgumentException("Multiplikation mit 0 nicht erlaubt");
+       } 
+       return num1 * num2;
     }
 
     public int divide(int num1, int num2) {

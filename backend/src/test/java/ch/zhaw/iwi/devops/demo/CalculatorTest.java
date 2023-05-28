@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
-    
+
     @Test
     public void TestAddition(){
         Calculator calculator = new Calculator();
@@ -130,8 +130,15 @@ public class CalculatorTest {
     @Test
     public void TestUnterNullResultat() {
         Calculator calculator = new Calculator();
-        int result = calculator.modulo(10, 3);
+        float result = calculator.modulo(10, 3);
         assertTrue(result >= 0);
     }
 
+    @Test
+    public void TestMultiplikationmitNull(){
+        Calculator calculator = new Calculator();
+        int num1 = 5;
+        int num2 = 2;
+        assertEquals(10, calculator.multiply(num1, num2));
+    }
 }

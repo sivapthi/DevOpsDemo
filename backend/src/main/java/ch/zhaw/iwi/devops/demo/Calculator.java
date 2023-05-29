@@ -37,7 +37,7 @@ public class Calculator {
         return result;
     }
 
-    public int zweiOperationen(int num1, int num2) {
+    public int mehrereOperationen(int num1, int num2) {
         int summe = add(num1, num2);
         int produkt = multiply(num1, num2);
         return summe + produkt;

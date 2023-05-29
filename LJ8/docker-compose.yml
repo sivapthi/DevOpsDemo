@@ -1,0 +1,29 @@
+version: '3.3'
+
+services:
+   db:
+     image: mysql:8.0.31
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: 12345
+       MYSQL_DATABASE: ghost
+       MYSQL_USER: ghost
+       MYSQL_PASSWORD: ghost
+
+   ghost:
+    image: ghost
+    restart: always
+    ports:
+      - 3001:2368
+    environment:
+      database__client: mysql
+      database__connection__host: db
+      database__connection__user: ghost
+      database__connection__password: ghost
+      database__connection__database: ghost
+      url: http://localhost:3001
+      
+volumes:
+    db_data: {}

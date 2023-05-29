@@ -137,8 +137,8 @@ public class CalculatorTest {
     @Test
     public void TestMultiplikationmitNull(){
         Calculator calculator = new Calculator();
-        int num1 = 5;
+        int num1 = 6;
         int num2 = 2;
-        assertEquals(10, calculator.multiply(num1, num2));
+        assertEquals(12, calculator.multiply(num1, num2));
     }
 }

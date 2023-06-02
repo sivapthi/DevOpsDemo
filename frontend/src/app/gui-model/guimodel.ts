@@ -127,7 +127,7 @@ export class GuiModel {
                         },
                         {
                             "type": "list",
-                            "name": "ToDo-Thinesan",
+                            "name": "Thinesan-ToDo",
                             "icon": "fa-user",
                             "color": "wet-asphalt",
                             "search": true,

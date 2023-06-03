@@ -128,6 +128,18 @@ public class CalculatorTest {
     }
 
     @Test
+    public void TestDivision5(){
+        Calculator calculator = new Calculator();
+        int num1 = 70;
+        int num2 = 10;
+        int expectedQuotient = 7;
+
+        int actualQuotient = calculator.divide(num1, num2);
+
+        assertEquals(expectedQuotient, actualQuotient);
+    }
+
+    @Test
     public void TestUnterNullResultat() {
         Calculator calculator = new Calculator();
         float result = calculator.modulo(10, 3);
